@@ -1,48 +1,84 @@
 body {
     background-color: black;
     width: 100%;
-    height: 100vh;
- }
+    height: 100vh; 
+    position:absolute; 
+}
 
 .poster {
   width: 50%;
   margin-left: 25%;
-  height: 94%;
-  margin-top: 3%;
+  margin-top:0px;
   color: white;
   font-family: 'Tangerine', cursive;
   text-align: center;
+  position:relative;
+  top: 1%
 }
 
 .personal-image {
     border: 5px solid white;
     width: 100%;
+    height: 680px;
     filter: brightness(50%);
-  }
+}
 
-  h1 {
-    font-size: 60px;
+h1 {
+    font-size: 50px;
     font-weight: 300;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: goldenrod;
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    color: goldenrod
   }
 
-  p {
-    font-size: 23px;
-    font-family: 'Bad Script', cursive; 
-    margin-top: 10px;
-  }
-
-  .foot {
+ p {
     font-size: 20px;
+    font-family: 'Bad Script', cursive; 
+    margin-top: 5px;
+    
+  }
+
+.foot {
+    font-size: 18px;
+    padding:0px;
     margin-left:180px;
     margin-bottom: 3px;
   }
 
-  .foot2 {
-    font-size: 20px;
+.foot2 {
+    font-size: 18px;
+    padding: 0px;
     color:goldenrod;
     margin-left:180px;
-    margin-top: 1px;
+    margin-top: 1px
   }
+
+  @media (max-width: 680px) {
+
+    body {
+      background-color: black;
+      width: 100%;
+      height: 100vh; 
+      position:absolute; 
+  }
+  
+  .poster {
+    width: 50%;
+    margin-left: 25%;
+    margin-top:0px;
+    color: white;
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    position:relative;
+    top: 20%
+  }
+  
+  .personal-image {
+      border: 5px solid white;
+      width: 100%;
+      filter: brightness(50%);
+      object-fit: fill;
+  }
+  
+    
+}
